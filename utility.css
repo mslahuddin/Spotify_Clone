@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.flex{
+display: flex;
+
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.column{
+    flex-direction: column;
+}
+.overflow{
+    
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+  overflow: hidden;    
+}
+.grid{
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    grid-template-rows:1fr ;
+     row-gap: 12px;
+} 
+
+.grid2{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+     row-gap: 12px;
+} 
+
+
+.border{
+    border: 2px solid;
+    border-radius: 7px;
+    
+}
+.invert{
+    filter: invert(1);
+    color: aliceblue;
+}
+.white {
+    color: aliceblue;
+}
+
+.m-1{
+     margin: 5px; 
+     
+}
+.m-2{
+    margin-top: 30px; 
+}
+.m-3{
+    margin-top: 50px; 
+}
+.p-1{
+    padding: 20px;  
+}
+.p-2{
+    padding: 8px;  
+}
+.p-3{
+    padding: 14px;  
+}
+.p-4{
+    padding: 36px;  
+}
+.bg-grey{
+ background-color:#121212;
+}
+.bg-light-grey{
+    background-color: #292929
+}
+.bg_dark_grey{
+    background-color: #101010;
+    justify-content: space-between;
+    position: fixed;
+    width: 76%;
+    z-index: 20;
+}
+.bg_arrow{
+    background-color: #090909;
+}
+.opacity{
+    opacity: 0.7;
+}
+.round{
+  border-radius: 50%;
+}
+.cursor{
+    cursor: pointer;
+}
+.bg{
+    background: linear-gradient(to bottom, #1d1d1d, #121212);
+}
+.gap{
+    row-gap: 15px;
+}
+
+
+@media screen and (max-width: 590px) {
+    .grid{ 
+     grid-template-columns: 1fr 2fr;
+    }
+ }
+@media screen and (max-width: 440px) {
+  
+    .p-3{
+      padding: 8px;  
+  }
+  .p-2{
+    padding: 2px;  
+}
+.grid{
+    grid-template-columns:1fr;
+   }
+ }
+
+ @media screen and (max-width: 900px) {
+
+    .grid2{
+      display: grid;
+      grid-template-columns:1fr 1fr;
+      grid-template-rows:1fr 1fr;
+       row-gap: 20px;
+    }
+  }
